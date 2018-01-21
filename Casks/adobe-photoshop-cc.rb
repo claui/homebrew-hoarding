@@ -126,7 +126,7 @@ cask 'adobe-photoshop-cc' do
   end
 
   uninstall_preflight do
-    IO.write "#{staged_path}/uninstall.xml", <<-EOS.undent
+    IO.write "#{staged_path}/uninstall.xml", <<~EOS
       <?xml version="1.0" encoding="utf-8"?>
       <Deployment>
         <Properties>
